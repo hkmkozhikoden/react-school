@@ -6,7 +6,7 @@ import Menu from "../assets/icons/menu.png";
 import Close from "../assets/icons/close.png";
 
 const StyledHeader = styled.header`
-  background-color: #c27140;
+  background-color: #cd6f37;
   color: #fff;
   width: 100%;
   padding: 10px 12px 8px 12px;

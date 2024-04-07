@@ -1,45 +1,35 @@
-.post-item
-{
-    position: relative;
-    background: #fff;
-    border-radius: 30px;
-    margin-bottom: 30px;
+.post-item {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 30px;
 }
-.post-img
-{
-    
+.post-img {
 }
-.post-img img
-{
-    width: 100%;
-    border-radius: 5px;
+.post-img img {
+  width: 100%;
+  border-radius: 5px;
 }
-.post-details
-{
-    padding: 30px;
+.post-details {
+  padding: 30px;
 }
-.blog-img
-{
-    height: 350px;
-    object-fit: cover;
-    width: 100%;
+.blog-img {
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
 }
-.blog-modal{ 
-    .modal-header
-    {
-        justify-content: center !important;
-    }
-.btn-close
-{
+.blog-modal {
+  .modal-header {
+    justify-content: center !important;
+  }
+  .btn-close {
     display: none;
-}
-.btn-secondary
-{
-    background-color:#c27140;
+  }
+  .btn-secondary {
+    background-color: #cd6f37;
     color: #fff !important;
+  }
 }
-}
-.modal-content.p-25
-{
-    padding: 25px;
+.modal-content.p-25 {
+  padding: 25px;
 }

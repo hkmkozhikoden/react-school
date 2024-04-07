@@ -1,6 +1,5 @@
-.modalContainer
-{
- position: fixed;
+.modalContainer {
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -12,8 +11,7 @@
   z-index: 9999;
   transition: 1s;
 }
-.modalRight 
-{
+.modalRight {
   border-radius: 5px;
   padding: 2rem;
   background-color: rgb(255, 255, 255);
@@ -24,19 +22,16 @@
   border-radius: 20px;
   position: relative;
 }
-.btn-cancel
-{
+.btn-cancel {
   background-color: #d9534f;
 }
-.closeBtn
-{
+.closeBtn {
   align-items: center;
-  justify-content:end;
-  position: relative; 
+  justify-content: end;
+  position: relative;
 }
-.btnPrimary
-{
-  background-color: #c27140;
+.btnPrimary {
+  background-color: #cd6f37;
   color: white;
   border: none;
   position: relative;
