@@ -11,8 +11,8 @@ import "../style/testimonial.css"
 function Testimonial() {
     const settings = {
         infinite: true,
-        speed: 300,
-        autoplay:false,
+        speed: 1500,
+        autoplay:true,
         pauseOnFocus: true,
         pauseOnHover: true,
         slidesToShow: 1,
@@ -23,11 +23,11 @@ function Testimonial() {
     <div>
       <section className="testimonial">
         <div className="container">
-         <div className="w-3/4 m-auto overflow-hidden rounded-20">
+         <div className=" m-auto overflow-hidden rounded-20">
           <div className='mt-20'>
            <Slider {...settings}>
             {data.map((d, index) => (
-              <div key={index} className='bg-l-blue gap-6' data-aos="fade-up">
+              <div key={index} className='bg-l-blue gap-6' data-aos="fade-up" data-aos-offset="10">
                 <div className="row align-items-center">
                   <div className="col-md-4">
                     <div className='testi-head flex justify-center items-center'>

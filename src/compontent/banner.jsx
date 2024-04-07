@@ -6,7 +6,7 @@ function Banner() {
     <section className='home banner align-items-center' style={{ backgroundImage: `url(${Border})` }}>
       <div className='banner-inner'>
         <div className='container'>
-          <div className="col-xl-8 col-lg-8" data-aos="fade-down">
+          <div className="col-xl-8 col-lg-8" data-aos="fade-up" data-aos-offset="10">
             <div className='headerContainer'>
               <h1>The Best Kindergarten School For Your Child</h1>
             </div>

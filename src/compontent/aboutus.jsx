@@ -1,5 +1,5 @@
 import React from 'react'
-import Aboutimg from '../assets/img/img/mission.jpg'
+import Aboutimg from '../assets/img/img/img13.jpg'
 import Vission from '../assets/img/img/mission1.jpg'
 function AboutUs() {
   return (
@@ -7,7 +7,7 @@ function AboutUs() {
       <section className='about-sec'>
         <div className='container'>
           <div className='row align-items-center'>
-            <div className='col-md-8 col-12'data-aos="fade-down">
+            <div className='col-md-8 col-12'data-aos="fade-down"data-aos-offset="10">
               <h2> About Us</h2>
               <p>At JDT Islam, we take immense pride in our century-long legacy of compassion and dedication in transforming the lives of underprivileged children through holistic care and education. Established in 1922, our institution has stood as a testament to unwavering commitment, providing a nurturing environment for orphans and children in need for a remarkable 100 years.
               </p>
@@ -21,7 +21,7 @@ function AboutUs() {
                 <p>Together, let’s celebrate 100 years of compassion and create a world where every child’s dreams can soar, and their potential knows no bounds.</p>
               </div>
             </div>
-            <div className="col-md-4 col-12"data-aos="fade-down">
+            <div className="col-md-4 col-12"data-aos="fade-down"data-aos-offset="10">
                 <img alt='aboutimg' src={Aboutimg} className="img-fluid" />
             </div>
           </div>
@@ -30,10 +30,10 @@ function AboutUs() {
        <section className='bg-l-grenn text-white'>
         <div className="container">
          <div className="row align-items-center justify-content-center">
-             <div className=" col-xl-7 col-lg-6 col-md-12" data-aos="fade-right">
+             <div className=" col-xl-7 col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="10">
               <img  alt ="vission" src={Vission} className='vission-img' />
              </div>
-             <div className="col-xl-5 col-lg-6 col-md-12" data-aos="fade-left">
+             <div className="col-xl-5 col-lg-6 col-md-12" data-aos="fade-left" data-aos-offset="10">
               <div className="row">
                <div className="col-12" >
                 <h5>MISSION</h5>

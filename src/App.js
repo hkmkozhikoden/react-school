@@ -14,8 +14,8 @@ import './style/modules/aos.css';
 function App() {
     useEffect(() => {
         AOS.init({
-            duration: 1200,
-            offset: 10
+            duration: 1000,
+            offset: 10,
         });
     }, []);
   return (

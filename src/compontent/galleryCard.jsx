@@ -42,7 +42,7 @@ const Gallery = () => {
       <div className="container">
       <div className="row">
         {data.map((item, index) => (
-          <div key={index} className="col-md-4">
+          <div key={index} className="col-md-4" data-aos="fade-down" data-aos-offset="10">
             <div className="image-container" onClick={() => openLightbox(index)}>
               <img src={item.image} alt={item.name} className="gallery-image" />
               <div className="image-info">

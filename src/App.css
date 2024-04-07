@@ -1,3 +1,4 @@
+
 html{
   width: 100%;
 }
@@ -71,6 +72,10 @@ body
       padding: 0px 150px;
   }
 }
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section
+{
+  overflow: hidden;
+}
 
 section
 {
@@ -93,11 +98,11 @@ section
 }
 .text-l-green
 {
-  color: #b61e53 !important;
+  color: #c27140 !important;
 }
 .bg-l-grenn
 {
-  background-color: #b61e53 !important;
+  background-color: #c27140 !important;
   color: white ;
 }
 .gap-6
@@ -139,13 +144,13 @@ section
 }
 /* btn-green */
 .btn-white{
-  color:#b61e53;
+  color:#c27140;
   background-color: #fff;
   border-color: #edf2f0;
 }
 /* btn-l-green */
 .btn-white:hover {
-  color:#b61e53;
+  color:#c27140;
   background-color: #fff;
   text-decoration: none;
   border-color: #edf2f0;}

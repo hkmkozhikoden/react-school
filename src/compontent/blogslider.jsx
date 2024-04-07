@@ -70,7 +70,7 @@ function BlogSlider() {
     };
 
     return (
-     <div className="blog-slider" data-aos="fade-up">
+     <div className="blog-slider" data-aos="fade-up" data-aos-offset="10">
        <section>
        <div className="container">
         <h2 className="text-center  mb-3"> BLOG AND NEWS</h2>

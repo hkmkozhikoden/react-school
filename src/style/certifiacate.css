@@ -18,7 +18,7 @@ section
     transform: translateX(-50%);
     height: 1px;
     width: 220px;
-    background-color: #046a38;
+    background-color: #1F3046;
 }
 .card-head
 {
@@ -32,7 +32,7 @@ section
     width: 100%;
     border-radius: 40px 2px;
     padding: 55px 45px;
-    background-color: #b61e53;
+    background-color: #c27140;
     color: #fff;
     h2
     {

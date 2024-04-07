@@ -3,7 +3,6 @@
     background-position: top center;
     background-size: cover;
     position: relative;
-    z-index: 1;
    }
 .banner-inner
 {
@@ -90,7 +89,7 @@ position: relative;
 marquee {
     overflow: hidden;
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 0%) 0%, #000 var(--marquee-fade-edges), #000 calc(100% - var(--marquee-fade-edges)), rgba(0, 0, 0, 0%) 100%);
-    color: #b61e53;
+    color: #c27140;
     z-index: 1; 
     width: 99%;
     
@@ -102,13 +101,13 @@ marquee {
     }
     a
     {
-      color: #b61e53;
+      color: #c27140;
       text-decoration: none;
       list-style: none;
     }
     a:hover
     {
-      color: #b61e53 !important;
+      color: #c27140 !important;
       text-decoration: none;
       list-style: none;
     }

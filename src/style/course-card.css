@@ -1,6 +1,9 @@
-.standered-section
+@media(min-width:767px)
+{
+    .standered-section
 {
     margin-top: -150px;
+}
 }
 .crs-card
 {
@@ -47,7 +50,7 @@ margin-bottom: 2rem;
   width: 100%;
   height: 100%;
   content: '';
-  background: #a00038c9;
+  background:#c27140d1;
 
 }
 .head
@@ -56,4 +59,11 @@ margin-bottom: 2rem;
     top: 45%;
     left: 33%;
     z-index: 1;
+}
+@media(max-width:767px)
+{
+.head
+{
+    left: 40%;
+}
 }

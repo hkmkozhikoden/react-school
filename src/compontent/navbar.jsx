@@ -6,13 +6,15 @@ import Menu from "../assets/icons/menu.png";
 import Close from "../assets/icons/close.png";
 
 const StyledHeader = styled.header`
-  background-color: #b61e53;
+  background-color: #c27140;
   color: #fff;
   width: 100%;
   padding: 10px 12px 8px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:absolute;
+  z-index:2;
 
   .nav_logo {
     padding: 0 12px;
@@ -39,7 +41,8 @@ const StyledHeader = styled.header`
 
     .menuToggleBtn {
       display: block;
-      position: absolute;
+      position: relative;
+      text-align:end;
       right: 20px;
       top: 0px;
       cursor: pointer;
@@ -128,7 +131,7 @@ const Navbar = () => {
                 </li>
               </NavMenu>
               <div className="menuToggleBtn" onClick={toggleMenu}>
-                {isToggleOpen ?  <img src={Close} alt="close"/> : <img src={Menu} alt="menu"/>  }
+                {isToggleOpen ?  <img src={Close} className="close" alt="close"/> : <img src={Menu} alt="menu"/>  }
               </div>
             </div>
           </div>
