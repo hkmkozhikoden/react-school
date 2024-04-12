@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  background: #cd6f37 !important;
+  background: #963a2f !important;
   color: #f6ebeb !important;
 }
 
@@ -24,8 +24,7 @@
 }
 .logo {
   margin-bottom: 10px;
-  width: 60%;
-}
+  height: 100px;}
 .sec-dec {
   margin-bottom: 30px;
 }

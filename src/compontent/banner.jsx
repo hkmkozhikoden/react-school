@@ -1,5 +1,5 @@
 import React from 'react';
-import Border from '../assets/img/home/banner2.jpg';
+import Border from '../assets/img/home/2.jpeg';
 import '../style/banner.css';
 function Banner() {
   return (

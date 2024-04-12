@@ -46,7 +46,7 @@
 .contact_field .form-control:focus {
   box-shadow: none;
   outline: none;
-  border-bottom: 2px solid #cd6f37;
+  border-bottom: 2px solid #963a2f;
 }
 .contact_field .form-control::placeholder {
   font-size: 13px;
@@ -55,7 +55,7 @@
 
 .contact_info_sec {
   position: absolute;
-  background-color: #cd6f37 !important;
+  background-color: #963a2f !important;
   right: 1px;
   top: 18%;
   height: 340px;

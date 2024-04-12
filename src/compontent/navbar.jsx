@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Logo1 from '../assets/logo/logo-t.png';
+import Logo1 from '../assets/logo/logo.png';
 import Menu from "../assets/icons/menu.png";
 import Close from "../assets/icons/close.png";
 
 const StyledHeader = styled.header`
-  background-color: #cd6f37;
+  background-color: #fff;
   color: #fff;
   width: 100%;
-  padding: 10px 12px 8px 12px;
-  display: flex;
+  padding: 0px 0px 8px 0px;
+  display: block;
   align-items: center;
   justify-content: space-between;
   position:absolute;
   z-index:2;
+
+  .header-top{
+    background-color:#963A2F ;
+    margin-bottom:10px;
+    .nav-menu-list
+    {
+      padding:5px 10px;
+      color:#fff;
+    }
+  }
 
   .nav_logo {
     padding: 0 12px;
@@ -28,7 +38,6 @@ const StyledHeader = styled.header`
 
   img {
     max-height: 60px;
-    max-width: 70px;
   }
   .menuToggleBtn
   {
@@ -70,7 +79,7 @@ const NavMenu = styled.ul`
 
   .nav-menu-list {
     text-decoration: none;
-    color: #fff;
+    color: #000;
     display: block;
     padding: 10px 10px;
     opacity: 0.8;
@@ -97,6 +106,17 @@ const Navbar = () => {
   return (
     <>
       <StyledHeader>
+        <div className="header-top">
+         <div className="container">
+         <NavMenu isToggleOpen={isToggleOpen} >
+            <li>
+              <Link id="1" to={"/"} className="nav-menu-list">
+                    ERP Login
+              </Link>
+              </li>
+              </NavMenu>
+         </div>
+        </div>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-4">
@@ -129,7 +149,9 @@ const Navbar = () => {
                     Contact
                   </Link>
                 </li>
+                <li></li>
               </NavMenu>
+              
               <div className="menuToggleBtn" onClick={toggleMenu}>
                 {isToggleOpen ?  <img src={Close} className="close" alt="close"/> : <img src={Menu} alt="menu"/>  }
               </div>

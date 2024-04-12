@@ -95,10 +95,10 @@ section {
   color: #6c757d !important;
 }
 .text-l-green {
-  color: #cd6f37 !important;
+  color: #963a2f !important;
 }
 .bg-l-grenn {
-  background-color: #cd6f37 !important;
+  background-color: #963a2f !important;
   color: white;
 }
 .gap-6 {
@@ -136,13 +136,13 @@ section {
 }
 /* btn-green */
 .btn-white {
-  color: #cd6f37;
+  color: #963a2f;
   background-color: #fff;
   border-color: #edf2f0;
 }
 /* btn-l-green */
 .btn-white:hover {
-  color: #cd6f37;
+  color: #963a2f;
   background-color: #fff;
   text-decoration: none;
   border-color: #edf2f0;
