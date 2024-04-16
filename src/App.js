@@ -23,8 +23,7 @@ function App() {
   return (
     <div>
           <LazyLoadImage
-      alt={image.alt}
-      height={image.height}
+      alt='Natural image'
       src={Naturalimg} effect="blur"/>
       
        <Router>     
