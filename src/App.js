@@ -1,5 +1,6 @@
 
 import { BrowserRouter as Router, Route,Routes}from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import './App.css';
 import Home from './pages/home';
 import Gallery from "./pages/gallery";
@@ -10,6 +11,7 @@ import Course1 from './pages/course1';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import './style/modules/aos.css';
+import Naturalimg from '../src/assets/img/22.jpg'
 
 function App() {
     useEffect(() => {
@@ -20,6 +22,11 @@ function App() {
     }, []);
   return (
     <div>
+          <LazyLoadImage
+      alt={image.alt}
+      height={image.height}
+      src={Naturalimg} effect="blur"/>
+      
        <Router>     
     <Routes>
     <Route index element={<Home />} />
