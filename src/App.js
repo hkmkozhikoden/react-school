@@ -1,5 +1,4 @@
-
-import { BrowserRouter as Router, Route,Routes}from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from './pages/home';
 import Gallery from "./pages/gallery";
@@ -18,19 +17,18 @@ function App() {
             offset: 10,
         });
     }, []);
-  return (
-    <div>
-       <Router>     
-    <Routes>
-    <Route index element={<Home />} />
-    <Route path="/about" element={<About />} />
-    <Route path="/blogs" element={<Course1/>} />
-    <Route path="/contact" element={<Contact />} />
-    <Route path="/gallery" element={<Gallery/>} />
-    </Routes>
-    </Router>
-    </div>
-  );
+  
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/blogs" element={<Course1 />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/gallery" element={<Gallery />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
-export default App;
 
+export default App;
