@@ -10,6 +10,7 @@ import Course1 from './pages/course1';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import './style/modules/aos.css';
+import ScrollToTop from "./compontent/scrolltop";
 
 function App() {
     useEffect(() => {
@@ -20,7 +21,8 @@ function App() {
     }, []);
   return (
     <div>
-       <Router>     
+       <Router> 
+       <ScrollToTop />    
     <Routes>
     <Route index element={<Home />} />
     <Route path="/about" element={<About />} />
