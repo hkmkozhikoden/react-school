@@ -17,23 +17,46 @@ function BlogSlider() {
     setNav1(slickNav);
     setNav2(slickFor);
   }, []);
+
   const slidesContent = [
     { imgSrc: Slidera, title: "Content 1", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
     { imgSrc: Sliderb, title: "Content 2", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
     { imgSrc: Sliderc, title: "Content 3", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
     { imgSrc: Sliderd, title: "Content 4", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" }
-
   ];
+
+  const settings = {
+    dots: true,
+    arrows: false,
+    focusOnHover: true,
+    focusOnSelect: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <section>
       <div className="slider-container">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-md-4" data-aos="fade-right" data-aos-offset="10">
-              <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} dots={true} arrows={false} 
-              focusOnHover={true} 
-              focusOnSelect={true}>
+            <div className="col-xl-4 col-md-6 mb-3 mt-3" data-aos="fade-right" data-aos-offset="10">
+              <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} >
                 {slidesContent.map((slide, index) => (
                   <div key={index}>
                     <div className="mx-2">
@@ -42,7 +65,7 @@ function BlogSlider() {
                         <h6 className="text-l-green">{slide.date}</h6>
                         <p>{slide.description}</p>
                         <Link to={"/blogs"}>
-                        <button className="btn-read-more"> Read More</button>
+                          <button className="btn-read-more">Read More</button>
                         </Link>
                       </div>
                     </div>
@@ -50,15 +73,16 @@ function BlogSlider() {
                 ))}
               </Slider>
             </div>
-            <div className="col-md-8" data-aos="fade-left" data-aos-offset="10">
+            <div className="col-xl-8 col-md-6 mb-3 mt-3" data-aos="fade-left" data-aos-offset="10">
               <Slider
                 asNavFor={nav1}
-                ref={slider => (slickFor = slider)}
+                ref={slider => (slickFor = slider)}{...settings}
                 slidesToShow={2}
                 swipeToSlide={true}
                 focusOnSelect={true}
                 focusOnHover={true}
                 autoplay={true}
+                loop={true}
                 autoplaySpeed={3000}
                 dots={true}>
                {slidesContent.map((slide, index) => (
