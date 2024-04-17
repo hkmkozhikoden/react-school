@@ -1,98 +1,80 @@
-import React from 'react';
-import Slider from 'react-slick';
+import React, { useState, useEffect, useRef } from "react";
+import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import '../style/blog-slider.css'
+import Slidera from '../assets/img/22.jpg';
+import Sliderb from '../assets/img/11.jpg';
+import Sliderc from '../assets/img/33.jpg';
+import Sliderd from '../assets/img/44.jpg';
+import '../style/blog-slider.css';
 
 function BlogSlider() {
-    const data = [
-        {
-            id:1,
-            img: 'https://www.jdtislamnewhope.com/img/event1.jpeg',
-            heading: 'Lorem Ipsum has been the industrys ',
-            date: '24 Feb 2023'
-        },
-        {
-            id:2,
-            img: 'https://www.jdtislamnewhope.com/img/onam1.jpeg',
-            heading: 'Lorem Ipsum has been the industrys ',
-            date: '24 Feb 2023'
-        },
-        {
-            id:3,
-            img: 'https://www.jdtislamnewhope.com/img/onam3.jpeg',
-            heading: 'Lorem Ipsum has been the industrys ',
-            date: '24 Feb 2023'
-        },
-        {
-            id:4,
-            img: 'https://www.jdtislamnewhope.com/img/onam1.jpeg',
-            heading: 'Lorem Ipsum has been the industrys ',
-            date: 'CMO'
-        },
-    ];
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
+  let slickNav = useRef(null);
+  let slickFor = useRef(null);
 
-    const settings = {
-        infinite: true,
-        speed: 200,
-        pauseOnFocus: true,
-        pauseOnHover: true,
-        slidesToShow: 2,
-        autoplay:true,
-        slidesToScroll: 1,
-        arrows:false,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow:   1,
-                    slidesToScroll: 1,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
+  useEffect(() => {
+    setNav1(slickNav);
+    setNav2(slickFor);
+  }, []);
+  const slidesContent = [
+    { imgSrc: Slidera, title: "Content 1", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
+    { imgSrc: Sliderb, title: "Content 2", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
+    { imgSrc: Sliderc, title: "Content 3", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" },
+    { imgSrc: Sliderd, title: "Content 4", date: "14 Nov 2023", description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ducimus?" }
 
-    return (
-     <div className="blog-slider" data-aos="fade-up" data-aos-offset="10">
-       <section>
-       <div className="container">
-        <h2 className="text-center  mb-3"> BLOG AND NEWS</h2>
-        <Slider {...settings}>
-            {data.map((item, index) => (
-                <div key={index}>
-                  <Link to={"/blogs"}><div className="m-3">
-                  <img className='blog-img' src={item.img} alt={item.name} />
-                    <div className="blog-slider-body">
-                    <div className="blog-content text-white">
-                    <h5>{item.heading}</h5>
-                    <p>{item.date}</p>
+  ];
+
+  return (
+    <section>
+      <div className="slider-container">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-md-4" data-aos="fade-right" data-aos-offset="10">
+              <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} dots={true} arrows={false} 
+              focusOnHover={true} 
+              focusOnSelect={true}>
+                {slidesContent.map((slide, index) => (
+                  <div key={index}>
+                    <div className="mx-2">
+                      <div className="blog-cont">
+                        <h3>{slide.title}</h3>
+                        <h6 className="text-l-green">{slide.date}</h6>
+                        <p>{slide.description}</p>
+                        <Link to={"/blogs"}>
+                        <button className="btn-read-more"> Read More</button>
+                        </Link>
+                      </div>
                     </div>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+            <div className="col-md-8" data-aos="fade-left" data-aos-offset="10">
+              <Slider
+                asNavFor={nav1}
+                ref={slider => (slickFor = slider)}
+                slidesToShow={2}
+                swipeToSlide={true}
+                focusOnSelect={true}
+                focusOnHover={true}
+                autoplay={true}
+                autoplaySpeed={3000}
+                dots={true}>
+               {slidesContent.map((slide, index) => (
+                  <div key={index}>
+                    <div className="mx-2">
+                      <img src={slide.imgSrc} className="img-fluid blog-slide-img rounded-5" alt={`slider img ${index}`} />
                     </div>
-                  </div></Link>
-                </div>
-            ))}
-        </Slider>
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
         </div>
-       </section>
-     </div>
-    );
+      </div>
+    </section>
+  );
 }
 
 export default BlogSlider;
