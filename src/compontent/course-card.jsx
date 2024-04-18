@@ -20,7 +20,7 @@ function CourseCard() {
                         </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6" data-aos="fade-down" data-aos-offset="10">
+                <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-offset="10">
                     <div className="sm-card">
                         <img alt='card' src={Card3} className="img-fluid" />
                        <div className="head">
@@ -30,7 +30,7 @@ function CourseCard() {
                        </div>
                     </div>
                 </div>
-                <div className="col-lg-3 col-md-6" data-aos="fade-down" data-aos-offset="10">
+                <div className="col-lg-3 col-md-6" data-aos="fade-up" data-aos-offset="10">
                     <div className="sm-card">
                         <img alt='card' src={Card3} className="img-fluid" />
                        <div className="head">

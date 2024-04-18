@@ -1,6 +1,6 @@
 .slick-arrow.slick-next
 {
-    right: 25px !important;
+    right: 27px !important;
 }
 .slick-arrow.slick-prev
 {
@@ -15,12 +15,14 @@ left: 10px !important;
 {
     height: 280px;
     margin-top:  15px;
+    opacity: 0.5;
 }
 .slick-slide.slick-active.slick-current .blog-slide-img
 {
     height: 300px;
     margin-top:  0px ;
     transition: transform all 3s;
+    opacity: 1;
 }
 .btn-read-more
 {
@@ -35,7 +37,10 @@ left: 10px !important;
     letter-spacing: 2px;
     border: none;
 }
-
+.btn-read-more:hover
+{
+    transform:scale(1);
+}
 .slick-dots li.slick-active button:before
 {
     background: #963a2f !important;
@@ -52,3 +57,6 @@ left: 10px !important;
     margin-top: 20px;
     border-radius: 50px !important;
     background-color: #66666c;}
+.slick-prev:before, .slick-next:before {
+background-color: #0e2037;
+}

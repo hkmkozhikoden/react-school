@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
-import Slidera from '../assets/img/22.jpg';
-import Sliderb from '../assets/img/11.jpg';
-import Sliderc from '../assets/img/33.jpg';
-import Sliderd from '../assets/img/44.jpg';
+import Slidera from '../assets/img/home/banner1.jpg';
+import Sliderb from '../assets/img/home/banner2.jpg';
+import Sliderc from '../assets/img/home/3.jpeg';
+import Sliderd from '../assets/img/home/banner1.jpg';
 import '../style/blog-slider.css';
 
 function BlogSlider() {
@@ -56,7 +56,7 @@ function BlogSlider() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-4 col-md-6 mb-3 mt-3" data-aos="fade-right" data-aos-offset="10">
-              <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} >
+              <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} arrows={false} >
                 {slidesContent.map((slide, index) => (
                   <div key={index}>
                     <div className="mx-2">
@@ -76,7 +76,7 @@ function BlogSlider() {
             <div className="col-xl-8 col-md-6 mb-3 mt-3" data-aos="fade-left" data-aos-offset="10">
               <Slider
                 asNavFor={nav1}
-                ref={slider => (slickFor = slider)}{...settings}
+                ref={slider => (slickFor = slider)}{...settings} arrows={true}
                 slidesToShow={2}
                 swipeToSlide={true}
                 focusOnSelect={true}
