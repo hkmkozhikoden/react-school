@@ -15,3 +15,7 @@ padding: 0px 10px 5px;
   border-radius: 5px;
 box-shadow:4px 4px 14px 5px #d1d0d0 !important;
 }
+.visually-hidden
+{
+  display: none;
+}
