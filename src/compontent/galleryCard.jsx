@@ -43,7 +43,7 @@ function App() {
             <div className="gallery-card">
               <Gallery className="W-100">
                   <a data-fancybox="gallery1" className="gallery-image" href={Gallery1}>
-                   <img src={Gallery1} className="gallery-image" alt="Image 1" />
+                   <img src={Gallery1} className="gallery-image" alt="galley 3" />
                  </a>
                  <a data-fancybox="gallery1" href={Gallery2} className="gallery-image"></a>
                  <a data-fancybox="gallery1" href={Gallery3} className="gallery-image"></a>
@@ -58,7 +58,7 @@ function App() {
             <div className="gallery-card">
               <Gallery>
                <a data-fancybox="gallery2" href={Gallery8}>
-                 <img src={Gallery8} className="gallery-image" alt="Image 1" />
+                 <img src={Gallery8} className="gallery-image" alt="gallety 2" />
                </a>
                <a data-fancybox="gallery2" className="gallery-image" href={Gallery5}></a>
                <a data-fancybox="gallery2" className="gallery-image" href={Gallery5}></a>
@@ -73,7 +73,7 @@ function App() {
             <div className="gallery-card">
               <Gallery>
                <a data-fancybox="gallery2" className="gallery-image" href={Gallery7}>
-                 <img src={Gallery7} className="gallery-image" alt="Image 1" />
+                 <img src={Gallery7} className="gallery-image" alt="galley 1" />
                </a>
                <a data-fancybox="gallery2" className="gallery-image" href={Gallery6}></a>
                <a data-fancybox="gallery2" className="gallery-image" href={Gallery6}></a>
