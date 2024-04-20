@@ -26,7 +26,7 @@ left: 10px !important;
 }
 .btn-read-more
 {
-    background-color: #0e2037;
+    background-color: #0e6e4e;
     color: #fff;
     padding: 10px 15px;
     width: 50%;
@@ -43,7 +43,7 @@ left: 10px !important;
 }
 .slick-dots li.slick-active button:before
 {
-    background: #963a2f !important;
+    background: #274a82 !important;
     width: 20px;
     margin-right: 10px ;
     height: 3px;
@@ -58,5 +58,5 @@ left: 10px !important;
     border-radius: 50px !important;
     background-color: #66666c;}
 .slick-prev:before, .slick-next:before {
-background-color: #0e2037;
+background-color: #0e6e4e;
 }

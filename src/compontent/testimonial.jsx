@@ -27,7 +27,7 @@ function Testimonial() {
           <div className='mt-20'>
            <Slider {...settings}>
             {data.map((d, index) => (
-              <div key={index} className='bg-l-blue gap-6' data-aos="fade-up" data-aos-offset="10">
+              <div key={index} className='bg-white gap-6' data-aos="fade-up" data-aos-offset="10">
                 <div className="row align-items-center">
                   <div className="col-md-4">
                     <div className='testi-head flex justify-center items-center'>

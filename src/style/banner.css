@@ -6,7 +6,8 @@
 .banner-inner {
   z-index: 1;
   opacity: 1;
-  position: relative;
+  position: absolute;
+  top: 47%;
   width: 100%;
 }
 .page_banner {
@@ -84,7 +85,7 @@ marquee {
     #000 calc(100% - var(--marquee-fade-edges)),
     rgba(0, 0, 0, 0%) 100%
   );
-  color: #963a2f;
+  color: #274a82;
   z-index: 1;
   width: 99%;
 
@@ -95,12 +96,12 @@ marquee {
     gap: 30px;
   }
   a {
-    color: #963a2f;
+    color: #274a82;
     text-decoration: none;
     list-style: none;
   }
   a:hover {
-    color: #963a2f !important;
+    color: #274a82 !important;
     text-decoration: none;
     list-style: none;
   }

@@ -60,3 +60,13 @@
 .teacher-card:hover .teacher-info {
     transform: scale(1.05);
 }
+.teacher .slick-arrow.slick-prev {
+left: -40px !important;
+}
+.teacher .slick-arrow.slick-next {
+    right: -20px !important;
+}
+/* .teacher .slick-arrow.slick-prev::before
+{
+    background-color: #d1d0d0;
+} */

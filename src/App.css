@@ -95,10 +95,10 @@ section {
   color: #6c757d !important;
 }
 .text-l-green {
-  color: #963a2f !important;
+  color: #274a82 !important;
 }
 .bg-l-grenn {
-  background-color: #963a2f !important;
+  background-color: #274a82 !important;
   color: white;
 }
 .gap-6 {
@@ -124,7 +124,7 @@ section {
   -webkit-line-clamp: 2;
 }
 .bg-l-blue {
-  background-color: #1f3046;
+  background-color: #0e6e4e;
   color: white;
 }
 .btn-s {
@@ -136,13 +136,13 @@ section {
 }
 /* btn-green */
 .btn-white {
-  color: #963a2f;
+  color: #274a82;
   background-color: #fff;
   border-color: #edf2f0;
 }
 /* btn-l-green */
 .btn-white:hover {
-  color: #963a2f;
+  color: #274a82;
   background-color: #fff;
   text-decoration: none;
   border-color: #edf2f0;

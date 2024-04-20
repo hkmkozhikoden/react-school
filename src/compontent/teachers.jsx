@@ -79,7 +79,7 @@ const Teachers = () => {
       
     ]
     var settings = {
-      arrows:false,
+      arrows:true,
       autoplay:true,
       autoplaySpeed: 2000,
       focusOnHover:true,
@@ -123,7 +123,7 @@ const Teachers = () => {
       };
   return (
     <div>
-      <section className='mt-3'>
+      <section className='mt-3 teacher'>
         <div className='container'>
           <div className="col-12">
             <h2 className="ment-head">Mentors</h2>

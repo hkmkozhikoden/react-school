@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   z-index:2;
 
   .header-top{
-    background-color:#963A2F ;
+    background-color:#274a82 ;
     margin-bottom:10px;
     .nav-menu-list
     {
