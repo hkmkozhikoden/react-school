@@ -115,10 +115,10 @@ function App() {
                 <a data-fancybox="gallery1" href={Gallery4} className="gallery-image">
                   <span className="visually-hidden">View Image 2</span>
                 </a>
-                <a data-fancybox="gallery1" href={Gallery5} className="gallery-image">
+                <a data-fancybox="gallery1" href={Gallery6} className="gallery-image">
                   <span className="visually-hidden">View Image 3</span>
                 </a>
-                <a data-fancybox="gallery1" href={Gallery6} className="gallery-image">
+                <a data-fancybox="gallery1" href={Gallery7} className="gallery-image">
                   <span className="visually-hidden">View Image 4</span>
                 </a>
               </Gallery>
