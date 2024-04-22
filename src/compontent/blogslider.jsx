@@ -51,7 +51,7 @@ function BlogSlider() {
   };
 
   return (
-    <section>
+    <section className="blog-slider">
       <div className="slider-container">
         <div className="container">
           <div className="row align-items-center">

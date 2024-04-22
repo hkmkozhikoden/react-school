@@ -60,6 +60,15 @@
     color: #ffffff !important;
     padding: 10px ;
   }
+  .testimonial .slick-prev:before, .slick-next:before
+  {
+    background-color: #0e6e4e !important;
+  }
+  .testimonial .slick-prev
+  {
+    left: 0px !important;
+    top: 50% !important;
+  }
   .slick-arrow 
   {
     position: absolute;
