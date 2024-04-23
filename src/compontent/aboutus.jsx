@@ -31,7 +31,7 @@ function AboutUs() {
         <div className="container">
          <div className="row align-items-center justify-content-center">
              <div className=" col-xl-7 col-lg-6 col-md-12" data-aos="fade-right" data-aos-offset="10">
-              <img  alt ="vission" src={Vission} className='vission-img' />
+              <img  alt ="vission" src={Vission} className='vission-img mb-3 mb-md-0' />
              </div>
              <div className="col-xl-5 col-lg-6 col-md-12" data-aos="fade-left" data-aos-offset="10">
               <div className="row">
