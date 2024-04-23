@@ -6,6 +6,7 @@ import Favas from "../assets/img/home/3.jpeg";
 import Fayis from "../assets/img/home/banner1.jpg";
 import Nithin from "../assets/img/home/banner2.jpg";
 import Rahof from '../assets/img/home/2.jpeg';
+import Marquee from "react-fast-marquee";
 import '../style/banner.css';
 
 function Banner() {
@@ -15,13 +16,18 @@ function Banner() {
     infinite: true,
     speed: 1500,
     autoplay: true,
-    loop:true,
+    loop: true,
     slidesToShow: 1,
     arrows: true,
     dots: false,
     slidesToScroll: 1,
     afterChange: (current) => setCurrentSlide(current)
   };
+  const marqueeContent = [
+    { text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.", link: "#" },
+    { text: "I can be another link", link: "#" },
+    { text: "Or just some text", link: "#" }
+  ];
 
   return (
     <div className="">
@@ -39,6 +45,16 @@ function Banner() {
                 </div>
               ))}
             </Slider>
+            <div className="marquee">
+              <div className="marquee-top">
+              <div className="marquee-cont">Notifications</div>
+              </div>
+              <Marquee >
+                {marqueeContent.map((item, index) => (
+                  <a key={index} href={item.link}>{item.text}</a>
+                ))}
+              </Marquee>
+            </div>
           </div>
         </div>
       </section>

@@ -1,8 +1,16 @@
 /* home banner */
 .banner-slide {
   position: relative;
+  height: 100vh;
+}
+@media (min-width:767px)
+{
+.banner-slide
+{
   margin-top: 110px;
   height: 90vh;
+
+}
 }
 
 .banner-img {
@@ -69,5 +77,37 @@ left: 94% !important;
   background: linear-gradient(180deg, #000000a6, #000000a6);
   z-index: 1;
 }
-
+.marquee
+{
+  background-color:#274a82 ;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  margin-top: -8px;
+}
+.marquee.top
+{
+    display: inline-block;
+    white-space: nowrap;
+    background-color: #D9D9D9;
+    color: #ffffff;
+    border-radius: 0 25px 25px 0;
+}
+ .marquee-cont
+{
+  padding: 9px 15px 9px 15px;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #fff2f2;
+  color: #274a82;
+  border-radius: 0 25px 25px 0;
+}
+.marquee a
+{
+  color: #fff !important;
+  text-decoration: none !important;
+  margin: 0px 5px;
+}
 /* /home banner */
