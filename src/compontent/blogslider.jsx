@@ -55,7 +55,7 @@ function BlogSlider() {
       <div className="slider-container">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-xl-4 col-md-6 mb-3 mt-3" data-aos="fade-right" data-aos-offset="10">
+            <div className="col-xl-4 col-md-6 mb-3 mt-3" data-aos="fade-right" data-aos-duration="10">
               <Slider asNavFor={nav2} ref={slider => (slickNav = slider)} arrows={false} >
                 {slidesContent.map((slide, index) => (
                   <div key={index}>
@@ -81,7 +81,7 @@ function BlogSlider() {
                 swipeToSlide={true}
                 focusOnSelect={true}
                 focusOnHover={true}
-                autoplay={true}
+                autoplay={false}
                 loop={true}
                 autoplaySpeed={3000}
                 dots={true}>

@@ -13,16 +13,20 @@ left: 10px !important;
 
 .slick-slide .blog-slide-img
 {
-    height: 280px;
-    margin-top:  15px;
+    height: 290px;
     opacity: 0.5;
+    margin-top: 5px;
+    object-fit: cover !important;
+    transition: transform .6s;
+
 }
  .blog-slider .slick-slide.slick-active.slick-current .blog-slide-img
 {
     height: 300px;
-    margin-top:  0px ;
+    object-fit: cover !important;
     transition: transform all 3s;
     opacity: 1;
+    transform: translateY(-5px);
 }
 .blog-slider .btn-read-more
 {
@@ -37,13 +41,10 @@ left: 10px !important;
     letter-spacing: 2px;
     border: none;
 }
-.btn-read-more:hover
-{
-    transform:scale(1);
-}
+
 .blog-slider .slick-dots li.slick-active button:before
 {
-    background: #274a82 !important;
+    background: #1F3046 !important;
     width: 20px;
     margin-right: 10px ;
     height: 3px;

@@ -37,8 +37,8 @@ function App() {
     <section className="gallery">
       <div className="container">
         <div className="row">
-          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3">
-            <div className="gallery-card">
+          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3" data-aos="fade-up-right">
+            <div className="gallery-card" >
               <Gallery className="W-100">
                 <a
                   data-fancybox="gallery1"
@@ -67,7 +67,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3">
+          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3" data-aos="flip-left">
             <div className="gallery-card">
               <Gallery className="W-100">
                 <a
@@ -97,7 +97,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3">
+          <div className="col-md-4 mb-2 mt-2 mb-md-3 mt-md-3" data-aos="fade-up-left">
             <div className="gallery-card">
               <Gallery className="W-100">
                 <a

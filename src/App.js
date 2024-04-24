@@ -10,6 +10,7 @@ import Course1 from './pages/course1';
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import './style/modules/aos.css';
+
 import ScrollToTop from "./compontent/scrolltop";
 
 function App() {
