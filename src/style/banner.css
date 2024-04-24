@@ -53,10 +53,7 @@ left: 94% !important;
   .banner-content.active {
     opacity: 1;
   }
-  .banner .slick-next:before
-  {
-    content: "\f105";
-  }
+  
 .banner-content h1
 {
   align-items: center;
