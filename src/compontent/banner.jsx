@@ -62,6 +62,7 @@ function Banner() {
   );
 }
 
+
 const data = [
   {
     name: "The Best Kindergarten ",
