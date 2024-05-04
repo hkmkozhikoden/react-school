@@ -1,166 +1,48 @@
-import React, { useState } from "react";
+import { useRef } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import '../style/navbar.css'
+import '../style/main-header.css'
 import { Link } from "react-router-dom";
-import styled from "styled-components";
-import Logo1 from '../assets/logo/logo.png';
-import Menu from "../assets/icons/menu.png";
-import Close from "../assets/icons/close.png";
+import Logo from '../assets/logo/logo-t.png'
+function Navbar() {
+	const navRef = useRef();
 
-const StyledHeader = styled.header`
-  background-color: #fff;
-  color: #fff;
-  width: 100%;
-  padding: 0px 0px 8px 0px;
-  display: block;
-  align-items: center;
-  justify-content: space-between;
-  position:absolute;
-  z-index:2;
+	const showNavbar = () => {
+		navRef.current.classList.toggle(
+			"responsive_nav"
+		);
+	};
 
-  .header-top{
-    background-color:#1F3046 ;
-    margin-bottom:10px;
-    .nav-menu-list
-    {
-      padding:5px 10px;
-      color:#fff;
-    }
-  }
-
-  .nav_logo {
-    padding: 0 12px;
-    .nav-logo-link {
-      text-decoration: none;
-      font-size: 24px;
-      color: #fab005;
-      font-weight: bold;
-    }
-  }
-
-  img {
-    max-height: 60px;
-  }
-  .menuToggleBtn
-  {
-    display:none
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    align-items: flex-start;
-
-    .menuToggleBtn {
-      display: block;
-      position: relative;
-      text-align:end;
-      right: 20px;
-      top: 0px;
-      cursor: pointer;
-    }
-  }
-`;
-
-const NavMenu = styled.ul`
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content:end;
-
-  li {
-    margin: 0;
-    padding: 0;
-
-    &:hover {
-      cursor: pointer;
-      color: #44a8f4;
-      border-radius: 4px;
-    }
-  }
-
-  .nav-menu-list {
-    text-decoration: none;
-    color: #000;
-    display: block;
-    padding: 10px 10px;
-    opacity: 0.8;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    display: ${(props) => (props.isToggleOpen ? "flex" : "none")};
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 5px;
-  }
-`;
-const Navbar = () => {
-  const [isToggleOpen, setIsToggleOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsToggleOpen(!isToggleOpen);
-  };
-
-  return (
-    <>
-      <StyledHeader>
-        <div className="header-top">
-         <div className="container">
-         <NavMenu isToggleOpen={isToggleOpen} >
-            <li>
-              <Link id="1" to={"/"} className="nav-menu-list">
-                    ERP Login
-              </Link>
-              </li>
-              </NavMenu>
-         </div>
-        </div>
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-4">
-              <img className="img-fluid" src={Logo1} alt="Logo" />
-            </div>
-            <div className="col-8">
-              <NavMenu isToggleOpen={isToggleOpen} >
-                <li>
-                  <Link to={"/"} className="nav-menu-list">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/about"} className="nav-menu-list">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/blogs"} className="nav-menu-list">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/gallery"} className="nav-menu-list">
-                    Gallery
-                  </Link>
-                </li>
-                <li>
-                  <Link to={"/contact"} className="nav-menu-list">
-                    Contact
-                  </Link>
-                </li>
-                <li></li>
-              </NavMenu>
-              
-              <div className="menuToggleBtn" onClick={toggleMenu}>
-                {isToggleOpen ?  <img src={Close} className="close" alt="close"/> : <img src={Menu} alt="menu"/>  }
-              </div>
-            </div>
-          </div>
-        </div>
-      </StyledHeader>
-    </>
-  );
-};
+	return (
+		<header>
+            <div className="container">
+                <div className="row align-items-center w-100">
+                    <div className="col-md-3 col-6">
+                    <img src={Logo} alt="Logo"  className="header-logo"/>
+                    </div>
+                    <div className="col-md-9 col-6 justify-content-end">
+                       <nav ref={navRef} className=" text-end"> 
+                       <Link className="text-uppercase" to={"/"}> <li > Home</li></Link>
+          			   <Link className="text-uppercase" to={"/about"}><li>About</li></Link>
+          			   <Link className="text-uppercase" to={"/blogs"}><li>Blog</li></Link>
+                   <Link className="text-uppercase" to={"/gallery"}><li>Gallery</li></Link>
+          			   <Link className="text-uppercase" to={"/contact"}><li>Contact</li></Link> 
+			           	<button
+			           		className="nav-btn nav-close-btn"
+			           		onClick={showNavbar}>
+			           		<FaTimes />
+			           	</button>
+			           </nav>
+                       <button
+			           	className="nav-btn"
+			           	onClick={showNavbar}>
+			           	<FaBars />
+			           </button>
+                    </div>
+                </div>
+            </div>		
+		</header>
+	);
+}
 
 export default Navbar;

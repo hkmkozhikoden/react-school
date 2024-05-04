@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Favas from "../assets/img/home/3.jpeg";
-import Fayis from "../assets/img/home/banner1.jpg";
-import Nithin from "../assets/img/home/banner2.jpg";
-import Rahof from '../assets/img/home/2.jpeg';
+import Banner1 from "../assets/img/home/3.jpeg";
+import Banner2 from "../assets/img/main/10.jpg";
+import Banner3 from "../assets/img/main/11.jpg";
+import Banner4 from '../assets/img/main/2.jpg';
 import Marquee from "react-fast-marquee";
 import '../style/banner.css';
 
@@ -67,22 +67,22 @@ const data = [
   {
     name: "The Best Kindergarten ",
     name1: "School For Your Child",
-    img: Nithin,
+    img: Banner1,
   },
   {
     name: "The Best Kindergarten ",
     name1: "School For Your Child",
-    img: Fayis,
+    img: Banner2,
   },
   {
     name: "The Best Kindergarten ",
     name1: "School For Your Child",
-    img: Favas,
+    img: Banner3,
   },
   {
     name: "The Best Kindergarten ",
     name1: "School For Your Child",
-    img: Rahof,
+    img: Banner4,
   },
 ];
 

@@ -105,7 +105,7 @@ const Teachers = () => {
             }
           },
           {
-            breakpoint: 567,
+            breakpoint: 767,
             settings: {
               slidesToShow: 1,
               slidesToScroll:1,
@@ -133,7 +133,9 @@ const Teachers = () => {
               <div key={index} className="col-12" data-aos="fade-up" data-aos-offset="10">
               <div className="card-teacher mb-3">
               <div className="teacher-card">
-                <img src={item.image} alt={item.name} className="gallery-image img-fluid" />
+                <div className="teacher-img">
+                <img src={item.image} alt={item.name} className="gallery-image" />
+                </div>
                 <div className='teacher-info'>
                     <h4>{item.name}</h4>
                     <h6>{item.desc}</h6>

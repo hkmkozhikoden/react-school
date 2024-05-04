@@ -21,7 +21,7 @@ function AboutUs() {
                 <p>Together, let’s celebrate 100 years of compassion and create a world where every child’s dreams can soar, and their potential knows no bounds.</p>
               </div>
             </div>
-            <div className="col-md-4 col-12"data-aos="fade-down"data-aos-offset="10">
+            <div className="col-md-4 col-12"data-aos="fade-up"data-aos-offset="0">
                 <img alt='aboutimg' src={Aboutimg} className="img-fluid" />
             </div>
           </div>

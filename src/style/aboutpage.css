@@ -17,6 +17,7 @@
   height: 300px;
   object-fit: cover;
   width: 100%;
+  cursor: zoom-in;
 }
 .blog-modal {
   .modal-header {

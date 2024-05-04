@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import '../style/aboutpage.css';
-import S1 from '../assets/img/55.jpg';
-import S2 from '../assets/img/22.jpg';
+import S1 from '../assets/img/main/10.jpg';
+import S2 from '../assets/img/main/12.jpg';
+import S3 from '../assets/img/main/9.jpg';
+import S4 from '../assets/img/main/7.jpg';
+
 
 function CourseDetails() {
   const [showModal, setShowModal] = useState(false);
@@ -17,19 +20,19 @@ function CourseDetails() {
     },
     {
       imageUrl: S2,
-      name: 'Abdul Rahoof',
+      name: 'shanavas ',
       date: 'Oct.14,2021',
       description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
     },
     {
-      imageUrl: S1,
-      name: 'Abdul Rahoof',
+      imageUrl: S3,
+      name: 'Muhammed Jihad',
       date: 'Oct.14,2021',
       description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
     },
     {
-      imageUrl: S2,
-      name: 'Abdul Rahoof',
+      imageUrl: S4,
+      name: 'Riyas ',
       date: 'Oct.14,2021',
       description: 'JDT Islam College of Nursing qualified for the finals of the Kerala University of Health Science Intercollegiate Football Championship. The semifinals were held at KMCT Medical College from December 31 to January 3.JDT Islam College of Nursing came second in the tournament, beating Dr. Moopens Medical College, the former champions. There were 56 teams in total and JDT Islam College of Nursing qualified for the finals after winning 6 matches. The Interzone Competitions will be held at Calicut Medical College from January 15 to 17.',
     },
