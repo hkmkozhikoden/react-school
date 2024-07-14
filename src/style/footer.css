@@ -8,7 +8,7 @@
 
 .social img {
   margin: 10px;
-  width: 30px;
+  width: 20px;
 }
 .socialMedia svg {
   color: white;
@@ -18,9 +18,10 @@
 }
 
 .footer p {
-  color: #f6ebeb !important;
+  color: #fff !important;
   opacity: 0.8;
-  font-size: 1.2rem;
+  font-size: 1rem; 
+  margin-bottom: 20px;
 }
 .logo {
   margin-bottom: 10px;
@@ -32,15 +33,16 @@
 .footer-contact {
   display: block;
   list-style: none;
-  padding: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 20px;
 }
 .footer-contact li {
   padding: 6px 0px;
-  color: #f6ebeb;
+  color: #fff;
+  list-style: circle;
   opacity: 0.8;
 }
 .footer-contact li.active {
-  color: #f6ebeb;
+  color: #fff;
   opacity: 1;
 }
 .widget-title {
@@ -59,7 +61,7 @@
   margin-bottom: 20px;
 }
 .contact-right li a {
-  color: #f6ebeb !important;
+  color: #fff !important;
   opacity: 0.8;
   display: inline-flex;
   font-size: 1rem;

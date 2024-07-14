@@ -97,7 +97,7 @@ function App() {
             <div
               key={index}
               className="col-lg-4 col-md-6 mb-2 mt-2 mb-md-3 mt-md-3"
-              data-aos={index % 2 === 0 ? "zoom-in-up" : "zoom-in-up"}
+              data-aos="fade-up"
             >
               <div className="gallery-card">
                 <Gallery className="W-100">
@@ -117,7 +117,7 @@ function App() {
                   ))}
                 </Gallery>
                 <div className="card-content">
-                  <h6 className="mt-3">{item.title}</h6>
+                  <h6 className="mb-0">{item.title}</h6>
                 </div>
               </div>
             </div>

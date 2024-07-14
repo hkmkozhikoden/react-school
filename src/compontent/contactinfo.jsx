@@ -11,7 +11,7 @@ function ContactInfo () {
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-md-12">
-                    <div className="contact_inner"data-aos="fade-down" data-aos-offset="10">
+                    <div className="contact_inner" data-aos="fade-down" data-aos-offset="10">
                         <div className="row">
                             <div className="col-md-10">
                                 <div className="contact_form_inner">

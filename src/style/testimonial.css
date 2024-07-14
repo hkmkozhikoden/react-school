@@ -40,11 +40,14 @@
   .testi-head .test-img
   {
     position: relative;
-    width: 100%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
   }
   .testi-cont
   {
-    padding: 50px 30px !important;
+    padding: 30px 80px !important;
   }
   .slcik-slider
   {
@@ -90,19 +93,5 @@
 .slick-prev, .slick-next
 {
   display: none !important;
-}
-}
-@media(min-width:767px)
-{
-.testi-head .test-img{
-  min-height: 285px ;
-}
-}
-@media(max-width:567px)
-{
-  .testi-head .test-img
-{
-  max-height: 350px;
-  object-fit: cover;
 }
 }
