@@ -1,0 +1,16 @@
+.popular-course-section {
+  background: rgb(255, 255, 255);
+}
+@media (min-width: 767px) {
+  .popular-course-section {
+    padding: 100px 0px 100px;
+  }
+}
+.popular-course-section h1::after {
+  height: 2px;
+  width: 250px;
+  background: #2a5285;
+  content: " ";
+  display: block;
+  margin: 15px auto;
+}

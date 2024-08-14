@@ -1,0 +1,103 @@
+.Testimonial {
+    text-align: center;
+  }
+  
+  .Testimonial-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .Testimonial-logo {
+      animation: Testimonial-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .Testimonial-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .Testimonial-link {
+    color: #61dafb;
+  }
+  
+  @keyframes Testimonial-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .testi-head .test-img
+  {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
+  }
+  .testi-cont
+  {
+    padding: 30px 80px !important;
+  }
+  .slcik-slider
+  {
+    overflow: none;
+  }
+  .slick-prev, .slick-next
+  {
+    top: 90% !important;
+    position: absolute;
+  }
+  .slick-prev:before, .slick-next:before
+  {
+    color: #ffffff !important;
+    padding: 10px ;
+  }
+  .testimonial .slick-prev:before, .slick-next:before
+  {
+    background-color: #0e6e4e !important;
+  }
+  .testimonial .slick-prev
+  {
+    left: 0px !important;
+    top: 50% !important;
+  }
+  .slick-arrow 
+  {
+    position: absolute;
+    bottom: 10px;
+  }
+  .slick-next
+  {
+   right: 20px;
+  }
+  .slick-prev
+  {
+    left: 93%;
+    z-index: 1;
+  }
+  
+ 
+@media (max-width:992px)
+{
+.slick-prev, .slick-next
+{
+  display: none !important;
+}
+}
+
+.testimonial .shadow-normal
+{
+  box-shadow: 0px 4px 80px 0px #85858514;
+
+}

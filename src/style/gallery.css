@@ -1,0 +1,32 @@
+.gallery .gallery-image 
+{
+  height: 250px;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all .65s ease-in-out;
+}
+ .gallery .card-content
+{
+padding:  15px 12px;
+}
+.gallery .gallery-card
+{
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0 .5rem 0.8rem rgba(0,0,0,.15)!important;}
+.visually-hidden
+{
+  display: none;
+}
+.gallery .gallery-card .card-img
+{
+  position: relative;
+  overflow: hidden ;
+}
+.gallery .gallery-card:hover .gallery-image
+{
+ transform: scale(1.1);
+ cursor: zoom-in;
+
+}

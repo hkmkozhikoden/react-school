@@ -1,0 +1,59 @@
+/* Common styles for both mobile and desktop */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar li {
+    margin-right: 20px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Styles for desktop */
+  @media (min-width: 769px) {
+    .navbar {
+      display: flex;
+    }
+  }
+  
+  /* Styles for mobile */
+  @media (max-width: 768px) {
+    .navbar {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 20px;
+    }
+  
+    .navbar.active {
+      display: flex;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  }
+  

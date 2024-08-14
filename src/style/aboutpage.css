@@ -1,0 +1,36 @@
+.post-item {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+.post-img {
+}
+.post-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.post-details {
+  padding: 30px;
+}
+.blog-img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+  cursor: zoom-in;
+}
+.blog-modal {
+  .modal-header {
+    justify-content: center !important;
+  }
+  .btn-close {
+    display: none;
+  }
+  .btn-secondary {
+    background-color: #2a5285;
+    color: #fff !important;
+  }
+}
+.modal-content.p-25 {
+  padding: 25px;
+}
