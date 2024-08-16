@@ -33,6 +33,16 @@ function Banner() {
     <div className="">
       <section className="banner pt-0">
         <div className="overflow-hidden ">
+        <div className="marquee">
+              <div className="marquee-top">
+              <div className="marquee-cont">Notifications</div>
+              </div>
+              <Marquee >
+                {marqueeContent.map((item, index) => (
+                  <a key={index} href={item.link}>{item.text}</a>
+                ))}
+              </Marquee>
+            </div>
           <div className="banner-cover">
             <Slider {...settings}>
               {data.map((d, index) => (
@@ -45,16 +55,6 @@ function Banner() {
                 </div>
               ))}
             </Slider>
-            <div className="marquee">
-              <div className="marquee-top">
-              <div className="marquee-cont">Notifications</div>
-              </div>
-              <Marquee >
-                {marqueeContent.map((item, index) => (
-                  <a key={index} href={item.link}>{item.text}</a>
-                ))}
-              </Marquee>
-            </div>
           </div>
         </div>
       </section>

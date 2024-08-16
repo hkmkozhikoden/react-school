@@ -28,7 +28,7 @@ function Testimonial() {
             <h4 className="mb-1 mt-3">Testimonials</h4>
             <h5 className="mb-3 mt-1">Lorem ipsum dolor sit amet.</h5>
             <div className="row align-items-center justify-content-center">
-              <div  className="col-lg-10 col-md-12  text-center rounded-20 bg-l-grenn">
+              <div  className="col-lg-10 col-md-12  text-center shadow-normal rounded-5 bg-white">
                 <Slider {...settings}>
                   {data.map((d, index) => (
                       <div key={index} className='testi-cont  flex flex-col justify-center items-center '>

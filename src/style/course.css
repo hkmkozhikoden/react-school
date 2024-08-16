@@ -9,7 +9,7 @@
 .popular-course-section h1::after {
   height: 2px;
   width: 250px;
-  background: #1F3046;
+  background: #2a5285;
   content: " ";
   display: block;
   margin: 15px auto;

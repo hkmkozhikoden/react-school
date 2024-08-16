@@ -1,13 +1,13 @@
 import React from 'react'
 import GalleryCard from '../compontent/galleryCard'
-import PageBanner from '../compontent/pagebanner'
 import Navbar from '../compontent/navbar';
 import Footer from '../compontent/footer';
+import GalleryBanner from '../compontent/gallery-banner';
 function Gallery() {
   return (
     <div className='main-Gallery'>
         <Navbar></Navbar>
-        <PageBanner/>
+        <GalleryBanner/>
         <GalleryCard/>
         <Footer></Footer>
     </div>
